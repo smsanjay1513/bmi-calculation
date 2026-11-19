@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    background: #4f46e5;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.calculator {
+    padding: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px #c7d2fe;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+.reset {
+    background: #64748b;
+}
+
+.reset:hover {
+    background: #475569;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eef2ff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.result h2 {
+    color: #333;
+}
+
+#bmiValue {
+    font-size: 45px;
+    color: #4f46e5;
+    margin: 12px;
+}
+
+#category {
+    margin: 10px;
+    color: #16a34a;
+}
+
+.info {
+    margin-top: 15px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #f1f5f9;
+    color: #555;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 18px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
